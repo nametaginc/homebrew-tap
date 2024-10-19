@@ -5,21 +5,21 @@
 class Nametag < Formula
   desc "Command-line tool for Nametag"
   homepage "https://getnametag.com"
-  version "0.1.10"
+  version "0.1.11"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/nametaginc/cli/releases/download/v0.1.10/nametag_Darwin_x86_64.tar.gz"
-      sha256 "2bb5c4f6a10b70fb8757731e07028e92e42ef063978c9eba33e8fcad3f87e2ef"
+      url "https://github.com/nametaginc/cli/releases/download/v0.1.11/nametag_Darwin_x86_64.tar.gz"
+      sha256 "0c67011d9e34150a2fcf8f289bd4842010c35ba97ef6bf994f8fa305b4c10f88"
 
       def install
         bin.install "nametag" => "nametag"
       end
     end
     on_arm do
-      url "https://github.com/nametaginc/cli/releases/download/v0.1.10/nametag_Darwin_arm64.tar.gz"
-      sha256 "1d96ef01297439a866eb8246bfe14edfbd54888ea9f8886690d21257d2366e8e"
+      url "https://github.com/nametaginc/cli/releases/download/v0.1.11/nametag_Darwin_arm64.tar.gz"
+      sha256 "96fdc6c24f2253c09a9b05838fe02b591e0c9a265e5d52ceb10b63434dc2577d"
 
       def install
         bin.install "nametag" => "nametag"
@@ -30,8 +30,8 @@ class Nametag < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nametaginc/cli/releases/download/v0.1.10/nametag_Linux_x86_64.tar.gz"
-        sha256 "ba6dbda1016f587105811ced68890ebf152d93e4ff0bf8c9e5ab3c67d6885489"
+        url "https://github.com/nametaginc/cli/releases/download/v0.1.11/nametag_Linux_x86_64.tar.gz"
+        sha256 "d10dab85dcc75cf3f70a2364c52e3c82a9853d5ec58430d61d968d101c782e1d"
 
         def install
           bin.install "nametag" => "nametag"
@@ -40,8 +40,8 @@ class Nametag < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nametaginc/cli/releases/download/v0.1.10/nametag_Linux_arm64.tar.gz"
-        sha256 "9e51ca1fdf47f7f9e0b68280b6abdf16c5eca0565a8e027802c50985c52c2204"
+        url "https://github.com/nametaginc/cli/releases/download/v0.1.11/nametag_Linux_arm64.tar.gz"
+        sha256 "d5c7765f86f702954d35678cca1684958049052bff2d0272b4319015932812ed"
 
         def install
           bin.install "nametag" => "nametag"
