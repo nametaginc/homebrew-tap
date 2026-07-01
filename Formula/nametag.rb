@@ -5,21 +5,21 @@
 class Nametag < Formula
   desc "Command-line tool for Nametag"
   homepage "https://getnametag.com"
-  version "0.1.21"
+  version "0.1.22"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nametaginc/cli/releases/download/v0.1.21/nametag_Darwin_x86_64.tar.gz"
-      sha256 "5098a34c8002fef9d8d8e9baa6ce02ed9918a1bf9c94c62bfd3a6b20bd1bff5c"
+      url "https://github.com/nametaginc/cli/releases/download/v0.1.22/nametag_Darwin_x86_64.tar.gz"
+      sha256 "a377c4096d1a1b603bb713c098003a1332f7dde274d21f4abee9a460998f70ed"
 
       def install
         bin.install "nametag" => "nametag"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nametaginc/cli/releases/download/v0.1.21/nametag_Darwin_arm64.tar.gz"
-      sha256 "21ba88252e45f0e5a051895c45d37f2bd3604bfa8c11365515afe2ad41bf276a"
+      url "https://github.com/nametaginc/cli/releases/download/v0.1.22/nametag_Darwin_arm64.tar.gz"
+      sha256 "18a638cb2a6e0ce5ee245e06e260f12ab203ab75af81ef596cd6f7f71d9f9689"
 
       def install
         bin.install "nametag" => "nametag"
@@ -30,8 +30,8 @@ class Nametag < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nametaginc/cli/releases/download/v0.1.21/nametag_Linux_x86_64.tar.gz"
-        sha256 "06e919eb69bbe12678f25f238c75f323b70911d3573df0304893f31e79db0761"
+        url "https://github.com/nametaginc/cli/releases/download/v0.1.22/nametag_Linux_x86_64.tar.gz"
+        sha256 "1ed9d709c2b84dd6357f828ba11dc9577a219a524998600dea427a9ae85a6460"
 
         def install
           bin.install "nametag" => "nametag"
@@ -40,8 +40,8 @@ class Nametag < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nametaginc/cli/releases/download/v0.1.21/nametag_Linux_arm64.tar.gz"
-        sha256 "e89ebf806e33ba468c9e7977ee7b86963ae8856fb251f1ae87fdfe1a2be0d599"
+        url "https://github.com/nametaginc/cli/releases/download/v0.1.22/nametag_Linux_arm64.tar.gz"
+        sha256 "0a1e16e2d173577142fceaf002aabf900d87f175200f353e5b95fd7cd4bd6a3d"
 
         def install
           bin.install "nametag" => "nametag"
